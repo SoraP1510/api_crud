@@ -10,7 +10,7 @@ app.use(express.json())
 const connection = mysql.createConnection(process.env.DATABASE_URL)
 
 app.get('/', (req, res) => {
-    res.send('Hello world!!')
+    res.send('Hello world!!2')
 })
 
 app.get('/users', (req, res) => {
@@ -68,7 +68,7 @@ app.delete('/users', (req, res) => {
 })
 
 app.listen(process.env.PORT || 3000, () => {
-    console.log('1CORS-enabled web server listening on port 3000')
+    console.log('CORS-enabled web server listening on port 3000')
 })
 
 // export the app for vercel serverless functions
